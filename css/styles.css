@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Селектор */
+header {
+    position: absolute;
+    top: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, auto);
+    gap: 10rem;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    max-width: 100%;
+    background-color: white;
+}
+
+header img {
+    width: 5rem;
+}
+
+/* Селектор */
+.profile-buttons {
+    position: fixed;
+    right: 0px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+}
+
+/* Колір */
+.profile-buttons button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: hsl(220, 71%, 37%);
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    margin-top: 10rem;
+}
+
+/* Селектро */
+/* Колір */
+nav > ul {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, auto);
+    gap: 40%;
+    list-style-type: none;
+    background-color: #1b47a2;
+    padding: 1rem 2rem;
+}
+
+/* Кольір */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding-left: 1rem;
+}
+
+article {
+    position: relative;
+    display: grid;
+    grid-auto-flow: row; 
+    grid-template-rows: repeat(2, auto); 
+    gap: 3rem;
+    padding: 2rem 0rem;
+}
+
+.info:nth-child(1) {
+    max-height: 60px;
+    overflow-y: scroll;
+}
+
+.info:nth-child(2) {
+    padding: 10px 16px;
+    margin: 16px 10px;
+}
+
+.info ol {
+    margin-left: 1rem;
+}
+
+#leadership {
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    max-width: 80%;
+    transition: all 0.3s ease-in-out;
+}
+
+#leadership:hover {
+    transform: scale(1.05);
+}
+
+/* Колір */
+table {
+    border: lab(0% 0 0) 2px solid;
+}
+
+th, td {
+    border: black 2px solid;
+    padding: 0.5rem;
+}
+
+aside {
+    position: absolute;
+    right: 5rem;
+    top: 50%;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(auto-fit, min-content);
+    gap: 1rem;
+    color: white;
+    background-color: #1c49a3;
+    border-radius: 20px;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+aside:hover {
+    transform: scale(1.1);
+    background-color: white;
+    border: 3px solid black;
+    color: black;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+aside ul {
+    margin-left: 1rem;
+}
+
+/* Колір */
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    padding: 0.5rem 2rem;
+    margin-top: 5rem;
+    border-top: hwb(220 11% 36%) 5px solid;
+}
+
+.footer-column {
+    display: grid;
+    gap: 2rem;
+}
+
+footer ul {
+    list-style-type: none;
+    display: grid;
+    gap: 2rem;
+}
+
+footer a:focus, footer label:focus {
+    outline: none;
+    animation: border-appear 3s forwards;
+}
+
+@keyframes border-appear {
+    0% { border: none; }
+    100% { border: 3px double black; padding: 3px; }
+}
+
+a [href*="tel"] {
+    font-size: 1.5rem;
+}
