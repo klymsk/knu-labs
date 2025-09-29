@@ -87,6 +87,7 @@ article {
     margin-left: 1rem;
 }
 
+/* Селектор */
 #leadership {
     margin-left: 2rem;
     margin-bottom: 3rem;
@@ -119,6 +120,7 @@ aside {
     background-color: #1c49a3;
     border-radius: 20px;
     padding: 1rem 1.5rem;
+    z-index: 1009;
     transition: all 0.3s ease-in-out;
 }
 
@@ -155,20 +157,20 @@ footer ul {
     gap: 2rem;
 }
 
+footer a,
+footer label {
+    border: none;
+    outline: none;
+    transition: all 3s ease-in-out;
+}
+
 footer a:hover, 
 footer label:hover {
-    outline: none;
-    animation: borders 3s ease-in-out;
+    border: 3px double black; 
+    padding: 3px; 
 }
 
-@keyframes borders {
-    0% { border: none; }
-    100% { 
-        border: 3px double black; 
-        padding: 3px; 
-    }
-}
-
-a [href*="tel"] {
+/* Селектор */
+a[href="tel:+38 (44) 254-40-55"] {
     font-size: 1.5rem;
 }
